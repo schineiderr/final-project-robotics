@@ -4,11 +4,11 @@ Controle de formação de uma estrutura virtual formada por um robô terrestre d
 
 Trabalho prático da disciplina de **Robótica Móvel** — PPGEE / UFES — 2026/1.
 
-## Integrantes
+## Grupo
 
-- Nome 1 —
-- Nome 2 —
-- Nome 3 —
+- Ruyther Maximo
+- Samuel Bucher
+- Zacchaeus Oladipo
 
 ## Descrição
 
@@ -22,19 +22,9 @@ Referência: M. Sarcinelli-Filho e R. Carelli, *Control of Ground and Aerial Rob
 
 ## Requisitos
 
-- MATLAB (validado no R2021) com ROS Toolbox
+- MATLAB (validado no R2022)
 - ROS + OptiTrack (NatNet) no ambiente do LAB-AIR
 - Joystick (para parada de emergência / modo manual)
-
-## Como executar
-
-1. Ajuste o IP do servidor ROS em `rosinit(...)`.
-2. Configure as **TEST SWITCHES** no início do script (Seção 3):
-   - `USE_LIMO`, `USE_DRONE` — habilita cada robô
-   - `USE_OBSTACLE` — liga/desliga o desvio de obstáculo
-   - `TRAJ_MODE` — `1` lemniscata completa / `0` posicionamento em `pos_des`
-3. Deixe `TEST_MODE = 1` para a checagem pré-voo (lê a pose e o sinal de controle sem decolar) e depois `0` para o experimento.
-4. Rode `final_controller.m`.
 
 ## Roteiro de testes (do mais simples ao completo)
 
@@ -58,12 +48,11 @@ Referência: M. Sarcinelli-Filho e R. Carelli, *Control of Ground and Aerial Rob
 
 ## Vídeos do experimento
 
-- Teste intermediário (somente LIMO): <link>
-- Formação completa: <link>
+- [Disponível clicando aqui](https://drive.google.com/drive/folders/1d5_fQV3iPW84FAu4oiGnuEy1Hro_iWej?usp=sharing)
 
 ## Arquivos
 
 - `final_controller.m` — código principal
-- `relatorio.pdf` / `relatorio.tex` — relatório do experimento
-- `data.mat` — dados coletados
+- `Final_Project_Robotics.pdf` — relatório do experimento
+- `outputs/data.mat` — dados coletados
 - `figs/` — figuras dos resultados
